@@ -69,14 +69,14 @@ public class PlaybackAPI extends BaseTest {
 		String endPoint = EnvProperties.getEnvProperty("config_", "PLAY_API_ENDPOINT");
 		String url = baseURI + endPoint + contentID;
 
-		headers = RestUtil.getHeadersList("PLAYBACK", os_type, url);
-
 		Test test = method.getAnnotation(Test.class);
 		ExtentTestManager.startTest(test.description() + "isDrm = " + isDrmFlag + " | " + os_type + " || GET : " + url); // new
 		ExtentTestManager.getTest().assignAuthor("Nitish Bector");
 		ExtentTestManager.getTest().assignCategory("1.0 - " + "Playback API");
 		ExtentTestManager.getTest().setDescription(test.description() + " GET : " + url);
 
+		headers = RestUtil.getHeadersList("PLAYBACK", os_type, url);
+		
 		loggerWrapper.info("--------------------- Executing the test for --------------------- : " + test.description()
 				+ " | " + os_type + " | GET : " + url);
 

@@ -32,7 +32,6 @@ import org.apache.commons.validator.routines.UrlValidator;
 import org.apache.http.HttpHost;
 import org.zeroturnaround.zip.ZipUtil;
 
-import com.airteltv.reports.Log;
 import com.airteltv.reports.LoggerWrapper;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -46,7 +45,7 @@ public class Utils {
 
 	public static String BE_BASE_URL = "";//Constants.BE_BASE_URL;
 	private static final String ALGORITHM = "AES";
-	private LoggerWrapper loggerWrapper = LoggerWrapper.getInstance();
+	private static LoggerWrapper loggerWrapper = LoggerWrapper.getInstance();
 	
 	/*public static HttpHeaders getHeader_AUTH_HEADER_BE(String _msisdn) {
 		HttpHeaders headers = new HttpHeaders();
@@ -166,7 +165,7 @@ public class Utils {
 
 	public static String getRandomLangParams(int totalLangs) {
 		String returnParam = pickNRandom("hi,en,pa,bj,te,ta,mr,ml,ba,gu,ra,or,as,kn".split(","), totalLangs);
-		Log.info("Returning language param - " + returnParam);
+		loggerWrapper.info("Returning language param - " + returnParam);
 		return returnParam;
 	}
 
@@ -252,8 +251,8 @@ public class Utils {
 				+ Utils.getTodaysDate() + ".zip";
 		convertToZip("/Users/b0201958/Documents/AutomationProjects/music_backend_qa/wynk-music/test-output/html",
 				outputZipPath);
-		Log.info("Converted file to zip, now uploading it on server 142");
-		Log.info("scp " + outputZipPath + " disha@10.1.2.142:/data/tmp");
+		loggerWrapper.info("Converted file to zip, now uploading it on server 142");
+		loggerWrapper.info("scp " + outputZipPath + " disha@10.1.2.142:/data/tmp");
 		ShellUtils.executeShellFromLocal("scp " + outputZipPath + " disha@10.1.2.142:/data/tmp");
 		ShellUtils.executeCommand("10.1.2.142", "sh +x /data/tmp/report.sh BE");
 		mail.sendMail("Wynk Backend API Automation Report");
@@ -268,7 +267,7 @@ public class Utils {
 			u = getUFromUid(getUID(msisdnOrUid));
 		}
 
-		Log.info("U - " + u);
+		loggerWrapper.info("U - " + u);
 		return u;
 	}
 
@@ -416,7 +415,7 @@ public class Utils {
 	}
 
 	public static void printPrettyJson(Object obj) {
-		Log.info("\n" + toPrettyJson(obj));
+		loggerWrapper.info("\n" + toPrettyJson(obj));
 	}
 
 	public static int getRandomInt(int min, int max) {
@@ -448,7 +447,7 @@ public class Utils {
 		String input = _input;
 		if (StringUtils.isBlank(_input) || StringUtils.isBlank(pattern))
 			return true;
-		Log.info("input - " + input + " match - " + Pattern.matches(pattern, input) + " replaced "
+		loggerWrapper.info("input - " + input + " match - " + Pattern.matches(pattern, input) + " replaced "
 				+ input.replaceAll(pattern, ""));
 		if (Pattern.matches(pattern, input) && input.replaceAll(pattern, "").length() == 0)
 			return true;

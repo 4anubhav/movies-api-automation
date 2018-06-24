@@ -4,16 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
 
-import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-
-import com.airteltv.reports.Log;
+import com.airteltv.reports.LoggerWrapper;
 
 import ch.ethz.ssh2.Connection;
 import ch.ethz.ssh2.StreamGobbler;
@@ -21,7 +13,7 @@ import ch.ethz.ssh2.StreamGobbler;
 public class ShellUtils {
 
 	private static String SHELL_AUTH_ANALYTICS = "disha@10.1.2.249";
-
+    private static LoggerWrapper loggerWrapper = LoggerWrapper.getInstance();
 	private static BufferedReader getOutput(Process p) {
 		return new BufferedReader(new InputStreamReader(p.getInputStream()));
 	}
@@ -59,7 +51,7 @@ public class ShellUtils {
 	// /home/pankajk/.ssh/id_rsa
 	private static String getShellResponse(String command, String auth) throws IOException {
 		ProcessBuilder pb = new ProcessBuilder("/usr/bin/ssh", "-i", "/home/disha/.ssh/id_rsa", auth, command);
-		Log.info("Command - " + command);
+		loggerWrapper.info("Command - " + command);
 		Process p = pb.start();
 		BufferedReader output = getOutput(p);
 		BufferedReader error = getError(p);
@@ -104,16 +96,16 @@ public class ShellUtils {
 		Connection connection = new Connection(server);
 		connection.connect();
 		boolean isAuthenticated = connection.authenticateWithPassword(username, password);
-		Log.info("connection status " + isAuthenticated);
+		loggerWrapper.info("connection status " + isAuthenticated);
 		ch.ethz.ssh2.Session session = connection.openSession();
 		InputStream stdout = new StreamGobbler(session.getStdout());
 		BufferedReader stdoutReader = new BufferedReader(new InputStreamReader(stdout));
-		Log.info("connected");
+		loggerWrapper.info("connected");
 
 		// Run command
 		String tempCommand = command;
 
-		Log.info("sending command: " + tempCommand);
+		loggerWrapper.info("sending command: " + tempCommand);
 		session.execCommand(tempCommand);// + " && sleep 5");
 
 		// Get output
@@ -126,7 +118,7 @@ public class ShellUtils {
 		}
 		String output = sb.toString();
 
-		Log.info("got output: " + output);
+		loggerWrapper.info("got output: " + output);
 		return output;
 
 	}
@@ -146,7 +138,7 @@ public class ShellUtils {
 		String q = Utils.getUID(msisdnOrUid).replaceAll("^[-]+", "");
 		String command = "zgrep " + q + " " + currentFile + " " + (minute > 5 ? "" : lastFile) + " | grep -i " + event
 				+ " | tail -" + count;
-		Log.info("running following command\n" + command);
+		loggerWrapper.info("running following command\n" + command);
 
 		String eventString = ShellUtils.getShellResponse(command, SHELL_AUTH_ANALYTICS);
 		if (StringUtils.isNotBlank(eventString)) {
@@ -169,7 +161,7 @@ public class ShellUtils {
 		String eventString = null;
 		q = q.replace("^[-]+", "");
 		String command = "zgrep -B" + extra + " -A" + extra + " " + q + " " + file + " | tail -" + count;
-		Log.info("Running following command\n" + command);
+		loggerWrapper.info("Running following command\n" + command);
 		eventString = ShellUtils.getShellResponse(command, "pankajk@" + ip);
 		if (eventString != null && eventString.length() > 0)
 			return eventString;
@@ -178,7 +170,7 @@ public class ShellUtils {
 	}
 
 	public static String getLogs(String server, String uid, String timestamp, String eventType) throws IOException {
-		Log.info("Getting Logs From Server " + server + "for uid :" + uid);
+		loggerWrapper.info("Getting Logs From Server " + server + "for uid :" + uid);
 		if (server.equalsIgnoreCase("analytics")) {
 			String command = "cat /mnt/share/analytics/analytics.log.670* | grep '" + uid + "'| grep '" + eventType
 					+ "'" + " | grep '" + timestamp + "'";
@@ -186,11 +178,11 @@ public class ShellUtils {
 					+ "' /mnt/share/analytics/analytics.log.670* /mnt/share/analytics/analytics.log."
 					+ Utils.getTodaysDate() + "-*" + " | grep  '" + eventType + "' |" + "grep '" + timestamp + "'";
 
-			Log.info("analytics command executed " + command1);
+			loggerWrapper.info("analytics command executed " + command1);
 			String serverIp = "10.1.2.249";
-			Log.info("Command to be executed :" + command + "On server :" + serverIp);
+			loggerWrapper.info("Command to be executed :" + command + "On server :" + serverIp);
 			String logs = executeCommand(serverIp, command1);
-			Log.info("Analytical Logs : " + logs);
+			loggerWrapper.info("Analytical Logs : " + logs);
 			return logs;
 		} else if (server.equalsIgnoreCase("portal")) {
 			String command = "";
@@ -204,9 +196,9 @@ public class ShellUtils {
 						+ "'| grep '" + timestamp + "'";
 			}
 			String serverIp = "10.1.2.248";
-			Log.info("Command to be executed :" + command + "On server :" + serverIp);
+			loggerWrapper.info("Command to be executed :" + command + "On server :" + serverIp);
 			String logs = executeCommand(serverIp, command);
-			Log.info("Portal Logs : " + logs);
+			loggerWrapper.info("Portal Logs : " + logs);
 			return logs;
 		}
 		return null;
