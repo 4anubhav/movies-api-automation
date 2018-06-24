@@ -17,7 +17,6 @@ dependency-reduced-pom.xml
 *.jpg
 *.jpeg
 *.gif
-*.html
 *.pack
 # Directories #
 /build/
