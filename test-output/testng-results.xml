@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="16" passed="16">
+  <reporter-output>
+    <line>
+      <![CDATA[Extent Report directory: /Users/b0204885/workspace/airteltv-apitest/result-files/extent-reports]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14383" started-at="2018-06-24T12:18:51Z" finished-at="2018-06-24T12:19:06Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="14383" started-at="2018-06-24T12:18:51Z" finished-at="2018-06-24T12:19:06Z">
+      <class name="com.airteltv.test.PlaybackAPI">
+        <test-method status="PASS" signature="extentSetup(org.testng.ITestContext)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="extentSetup" is-config="true" duration-ms="97" started-at="2018-06-24T17:48:51Z" finished-at="2018-06-24T17:48:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1526f71]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Extent Report directory: /Users/b0204885/workspace/airteltv-apitest/result-files/extent-reports]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- extentSetup -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="startExtent" is-config="true" duration-ms="3082" started-at="2018-06-24T17:48:52Z" finished-at="2018-06-24T17:48:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_ALTBALAJI(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="playback_ALTBALAJI(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@368f2016]" name="playback_ALTBALAJI" duration-ms="2104" started-at="2018-06-24T17:48:55Z" description="Playback API - ALTBALAJI : " data-provider="urls_ALTBALAJI" finished-at="2018-06-24T17:48:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ALTBALAJI_EPISODE]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_ALTBALAJI(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- playback_ALTBALAJI -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="afterEachTestMethod" is-config="true" duration-ms="2" started-at="2018-06-24T17:48:57Z" finished-at="2018-06-24T17:48:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=playback_ALTBALAJI status=SUCCESS method=PlaybackAPI.playback_ALTBALAJI(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@368f2016] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="startExtent" is-config="true" duration-ms="183" started-at="2018-06-24T17:48:57Z" finished-at="2018-06-24T17:48:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_ALTBALAJI(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="playback_ALTBALAJI(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@368f2016]" name="playback_ALTBALAJI" duration-ms="234" started-at="2018-06-24T17:48:57Z" description="Playback API - ALTBALAJI : " data-provider="urls_ALTBALAJI" finished-at="2018-06-24T17:48:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ALTBALAJI_MOVIE]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_ALTBALAJI(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- playback_ALTBALAJI -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="afterEachTestMethod" is-config="true" duration-ms="1" started-at="2018-06-24T17:48:57Z" finished-at="2018-06-24T17:48:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=playback_ALTBALAJI status=SUCCESS method=PlaybackAPI.playback_ALTBALAJI(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@368f2016] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="startExtent" is-config="true" duration-ms="124" started-at="2018-06-24T17:48:57Z" finished-at="2018-06-24T17:48:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_ALTBALAJI(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="playback_ALTBALAJI(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@368f2016]" name="playback_ALTBALAJI" duration-ms="778" started-at="2018-06-24T17:48:57Z" description="Playback API - ALTBALAJI : " data-provider="urls_ALTBALAJI" finished-at="2018-06-24T17:48:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ALTBALAJI_EPISODE.DRM]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_ALTBALAJI(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- playback_ALTBALAJI -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="afterEachTestMethod" is-config="true" duration-ms="1" started-at="2018-06-24T17:48:58Z" finished-at="2018-06-24T17:48:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=playback_ALTBALAJI status=SUCCESS method=PlaybackAPI.playback_ALTBALAJI(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@368f2016] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="startExtent" is-config="true" duration-ms="175" started-at="2018-06-24T17:48:58Z" finished-at="2018-06-24T17:48:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_ALTBALAJI(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="playback_ALTBALAJI(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@368f2016]" name="playback_ALTBALAJI" duration-ms="664" started-at="2018-06-24T17:48:58Z" description="Playback API - ALTBALAJI : " data-provider="urls_ALTBALAJI" finished-at="2018-06-24T17:48:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ALTBALAJI_MOVIE.DRM]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_ALTBALAJI(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- playback_ALTBALAJI -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="afterEachTestMethod" is-config="true" duration-ms="0" started-at="2018-06-24T17:48:59Z" finished-at="2018-06-24T17:48:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=playback_ALTBALAJI status=SUCCESS method=PlaybackAPI.playback_ALTBALAJI(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@368f2016] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="startExtent" is-config="true" duration-ms="128" started-at="2018-06-24T17:48:59Z" finished-at="2018-06-24T17:48:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_ALTBALAJI(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="playback_ALTBALAJI(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="playback_ALTBALAJI" duration-ms="219" started-at="2018-06-24T17:48:59Z" description="Playback API - ALTBALAJI : " data-provider="urls_ALTBALAJI" finished-at="2018-06-24T17:48:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ALTBALAJI_EPISODE]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_ALTBALAJI(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- playback_ALTBALAJI -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="afterEachTestMethod" is-config="true" duration-ms="1" started-at="2018-06-24T17:48:59Z" finished-at="2018-06-24T17:48:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=playback_ALTBALAJI status=SUCCESS method=PlaybackAPI.playback_ALTBALAJI(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="startExtent" is-config="true" duration-ms="149" started-at="2018-06-24T17:48:59Z" finished-at="2018-06-24T17:48:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_ALTBALAJI(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="playback_ALTBALAJI(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="playback_ALTBALAJI" duration-ms="213" started-at="2018-06-24T17:48:59Z" description="Playback API - ALTBALAJI : " data-provider="urls_ALTBALAJI" finished-at="2018-06-24T17:49:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ALTBALAJI_MOVIE]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_ALTBALAJI(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- playback_ALTBALAJI -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="afterEachTestMethod" is-config="true" duration-ms="0" started-at="2018-06-24T17:49:00Z" finished-at="2018-06-24T17:49:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=playback_ALTBALAJI status=SUCCESS method=PlaybackAPI.playback_ALTBALAJI(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="startExtent" is-config="true" duration-ms="127" started-at="2018-06-24T17:49:00Z" finished-at="2018-06-24T17:49:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_ALTBALAJI(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="playback_ALTBALAJI(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="playback_ALTBALAJI" duration-ms="518" started-at="2018-06-24T17:49:00Z" description="Playback API - ALTBALAJI : " data-provider="urls_ALTBALAJI" finished-at="2018-06-24T17:49:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ALTBALAJI_EPISODE.DRM]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_ALTBALAJI(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- playback_ALTBALAJI -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="afterEachTestMethod" is-config="true" duration-ms="0" started-at="2018-06-24T17:49:00Z" finished-at="2018-06-24T17:49:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=playback_ALTBALAJI status=SUCCESS method=PlaybackAPI.playback_ALTBALAJI(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="startExtent" is-config="true" duration-ms="171" started-at="2018-06-24T17:49:00Z" finished-at="2018-06-24T17:49:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_ALTBALAJI(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="playback_ALTBALAJI(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="playback_ALTBALAJI" duration-ms="815" started-at="2018-06-24T17:49:00Z" description="Playback API - ALTBALAJI : " data-provider="urls_ALTBALAJI" finished-at="2018-06-24T17:49:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ALTBALAJI_MOVIE.DRM]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_ALTBALAJI(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- playback_ALTBALAJI -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="afterEachTestMethod" is-config="true" duration-ms="0" started-at="2018-06-24T17:49:01Z" finished-at="2018-06-24T17:49:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=playback_ALTBALAJI status=SUCCESS method=PlaybackAPI.playback_ALTBALAJI(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="startExtent" is-config="true" duration-ms="129" started-at="2018-06-24T17:49:01Z" finished-at="2018-06-24T17:49:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_EROSNOW(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="playback_EROSNOW(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@368f2016]" name="playback_EROSNOW" duration-ms="1057" started-at="2018-06-24T17:49:01Z" description="Playback API - EROSNOW : " data-provider="urls_EORSNOW" finished-at="2018-06-24T17:49:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EROSNOW_EPISODE]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_EROSNOW(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- playback_EROSNOW -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="startExtent" is-config="true" duration-ms="115" started-at="2018-06-24T17:49:03Z" finished-at="2018-06-24T17:49:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_EROSNOW(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="afterEachTestMethod" is-config="true" duration-ms="0" started-at="2018-06-24T17:49:03Z" finished-at="2018-06-24T17:49:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=playback_EROSNOW status=SUCCESS method=PlaybackAPI.playback_EROSNOW(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@368f2016] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="playback_EROSNOW(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@368f2016]" name="playback_EROSNOW" duration-ms="428" started-at="2018-06-24T17:49:03Z" description="Playback API - EROSNOW : " data-provider="urls_EORSNOW" finished-at="2018-06-24T17:49:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EROSNOW_MOVIE]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_EROSNOW(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- playback_EROSNOW -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="afterEachTestMethod" is-config="true" duration-ms="0" started-at="2018-06-24T17:49:03Z" finished-at="2018-06-24T17:49:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=playback_EROSNOW status=SUCCESS method=PlaybackAPI.playback_EROSNOW(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@368f2016] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="startExtent" is-config="true" duration-ms="154" started-at="2018-06-24T17:49:03Z" finished-at="2018-06-24T17:49:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_EROSNOW(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="playback_EROSNOW(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="playback_EROSNOW" duration-ms="414" started-at="2018-06-24T17:49:03Z" description="Playback API - EROSNOW : " data-provider="urls_EORSNOW" finished-at="2018-06-24T17:49:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EROSNOW_EPISODE]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_EROSNOW(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- playback_EROSNOW -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="startExtent" is-config="true" duration-ms="135" started-at="2018-06-24T17:49:04Z" finished-at="2018-06-24T17:49:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_EROSNOW(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="afterEachTestMethod" is-config="true" duration-ms="0" started-at="2018-06-24T17:49:04Z" finished-at="2018-06-24T17:49:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=playback_EROSNOW status=SUCCESS method=PlaybackAPI.playback_EROSNOW(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="playback_EROSNOW(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="playback_EROSNOW" duration-ms="469" started-at="2018-06-24T17:49:04Z" description="Playback API - EROSNOW : " data-provider="urls_EORSNOW" finished-at="2018-06-24T17:49:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EROSNOW_MOVIE]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_EROSNOW(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- playback_EROSNOW -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="afterEachTestMethod" is-config="true" duration-ms="0" started-at="2018-06-24T17:49:04Z" finished-at="2018-06-24T17:49:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=playback_EROSNOW status=SUCCESS method=PlaybackAPI.playback_EROSNOW(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="startExtent" is-config="true" duration-ms="132" started-at="2018-06-24T17:49:04Z" finished-at="2018-06-24T17:49:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_HOOQ(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="playback_HOOQ(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@368f2016]" name="playback_HOOQ" duration-ms="174" started-at="2018-06-24T17:49:04Z" description="Playback API - HOOQ : " data-provider="urls_HOOQ" finished-at="2018-06-24T17:49:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[HOOQ_MOVIE]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_HOOQ(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- playback_HOOQ -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="afterEachTestMethod" is-config="true" duration-ms="0" started-at="2018-06-24T17:49:05Z" finished-at="2018-06-24T17:49:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=playback_HOOQ status=SUCCESS method=PlaybackAPI.playback_HOOQ(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@368f2016] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="startExtent" is-config="true" duration-ms="138" started-at="2018-06-24T17:49:05Z" finished-at="2018-06-24T17:49:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_HOOQ(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="playback_HOOQ(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@368f2016]" name="playback_HOOQ" duration-ms="179" started-at="2018-06-24T17:49:05Z" description="Playback API - HOOQ : " data-provider="urls_HOOQ" finished-at="2018-06-24T17:49:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[HOOQ_EPISODE]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_HOOQ(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- playback_HOOQ -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="afterEachTestMethod" is-config="true" duration-ms="0" started-at="2018-06-24T17:49:05Z" finished-at="2018-06-24T17:49:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=playback_HOOQ status=SUCCESS method=PlaybackAPI.playback_HOOQ(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@368f2016] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="startExtent" is-config="true" duration-ms="143" started-at="2018-06-24T17:49:05Z" finished-at="2018-06-24T17:49:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_HOOQ(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="playback_HOOQ(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="playback_HOOQ" duration-ms="170" started-at="2018-06-24T17:49:05Z" description="Playback API - HOOQ : " data-provider="urls_HOOQ" finished-at="2018-06-24T17:49:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[HOOQ_MOVIE]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_HOOQ(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- playback_HOOQ -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="startExtent" is-config="true" duration-ms="124" started-at="2018-06-24T17:49:05Z" finished-at="2018-06-24T17:49:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_HOOQ(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="afterEachTestMethod" is-config="true" duration-ms="0" started-at="2018-06-24T17:49:05Z" finished-at="2018-06-24T17:49:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=playback_HOOQ status=SUCCESS method=PlaybackAPI.playback_HOOQ(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="playback_HOOQ(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="playback_HOOQ" duration-ms="184" started-at="2018-06-24T17:49:05Z" description="Playback API - HOOQ : " data-provider="urls_HOOQ" finished-at="2018-06-24T17:49:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[HOOQ_EPISODE]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void com.airteltv.test.PlaybackAPI.playback_HOOQ(java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- playback_HOOQ -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="afterEachTestMethod" is-config="true" duration-ms="0" started-at="2018-06-24T17:49:06Z" finished-at="2018-06-24T17:49:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=playback_HOOQ status=SUCCESS method=PlaybackAPI.playback_HOOQ(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="generateReport()[pri:0, instance:com.airteltv.test.PlaybackAPI@4c583ecf]" name="generateReport" is-config="true" duration-ms="436" started-at="2018-06-24T17:49:06Z" finished-at="2018-06-24T17:49:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+      </class> <!-- com.airteltv.test.PlaybackAPI -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

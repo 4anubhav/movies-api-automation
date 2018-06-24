@@ -1,0 +1,191 @@
+{
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "eligibleForPlayback": {
+      "$id": "/properties/eligibleForPlayback",
+      "type": "boolean",
+      "title": "The Eligibleforplayback Schema ",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "playId": {
+      "$id": "/properties/playId",
+      "type": "string",
+      "title": "The Playid Schema ",
+      "default": "",
+      "examples": [
+        "https://cdn.cloud.altbalaji.com/content/2017-03/1727-58d1029fb55b6/manifest.mpd"
+      ]
+    },
+    "playbackType": {
+      "$id": "/properties/playbackType",
+      "type": "string",
+      "title": "The Playbacktype Schema ",
+      "default": "",
+      "examples": [
+        "DRM"
+      ]
+    },
+    "message": {
+      "$id": "/properties/message",
+      "type": "string",
+      "title": "The Message Schema ",
+      "default": "",
+      "examples": [
+        "success"
+      ]
+    },
+    "bundleInfo": {
+      "$id": "/properties/bundleInfo",
+      "type": "object",
+      "properties": {
+        "isBundle": {
+          "$id": "/properties/bundleInfo/properties/isBundle",
+          "type": "boolean",
+          "title": "The Isbundle Schema ",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "isExhausted": {
+          "$id": "/properties/bundleInfo/properties/isExhausted",
+          "type": "boolean",
+          "title": "The Isexhausted Schema ",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "counter": {
+          "$id": "/properties/bundleInfo/properties/counter",
+          "type": "integer",
+          "title": "The Counter Schema ",
+          "default": 0,
+          "examples": [
+            0
+          ]
+        }
+      }
+    },
+    "cp": {
+      "$id": "/properties/cp",
+      "type": "string",
+      "title": "The Cp Schema ",
+      "default": "",
+      "examples": [
+        "ALTBALAJI"
+      ]
+    },
+    "isDrm": {
+      "$id": "/properties/isDrm",
+      "type": "boolean",
+      "title": "The Isdrm Schema ",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "drminfo": {
+      "$id": "/properties/drminfo",
+      "type": "object",
+      "properties": {
+        "streamTicket": {
+          "$id": "/properties/drminfo/properties/streamTicket",
+          "type": "string",
+          "title": "The Streamticket Schema ",
+          "default": "",
+          "examples": [
+            "8d7f3d40-bd20-4c40-9f71-e118605b6ad3"
+          ]
+        },
+        "licenceUrl": {
+          "$id": "/properties/drminfo/properties/licenceUrl",
+          "type": "string",
+          "title": "The Licenceurl Schema ",
+          "default": "",
+          "examples": [
+            "https://api.cloud.altbalaji.com//player/drm/widevine-modular"
+          ]
+        },
+        "xssessionHeader": {
+          "$id": "/properties/drminfo/properties/xssessionHeader",
+          "type": "string",
+          "title": "The Xssessionheader Schema ",
+          "default": "",
+          "examples": [
+            "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImtpZCI6MH0.eyJqdGkiOiI5ZTFkMTE3NS1hMGRlLTRkZTYtYTEyOS0wYWQ3MTY3MDdlNjMiLCJpYXQiOjE1Mjk2NzA4NzYsImV4cCI6MTUyOTc1NzI3NiwicHJvZmlsZUlkIjoiODgxOTI5NSIsImRldmljZUlkIjpudWxsLCJkZXZpY2VVdWlkIjpudWxsLCJhY2NvdW50SWQiOiI4ODE5Mjk0Iiwicm9sZXMiOlsiUk9MRV9GUk9OVF9VU0VSIl0sInRlbmFudCI6ImJhbGFqaSIsImlzcyI6ImZyb250IiwiYXVkIjoiZnJvbnQifQ.iNtMk7fKn4F5hHB9cJ18DW4AZhuFbo8JNuKMzFycelk"
+          ]
+        },
+        "streamId": {
+          "$id": "/properties/drminfo/properties/streamId",
+          "type": "string",
+          "title": "The Streamid Schema ",
+          "default": "",
+          "examples": [
+            "27537"
+          ]
+        },
+        "licenseValidity": {
+          "$id": "/properties/drminfo/properties/licenseValidity",
+          "type": "integer",
+          "title": "The Licensevalidity Schema ",
+          "default": 0,
+          "examples": [
+            1532262878155
+          ]
+        },
+        "partner": {
+          "$id": "/properties/drminfo/properties/partner",
+          "type": "string",
+          "title": "The Partner Schema ",
+          "default": "",
+          "examples": [
+            "ALTBALAJI"
+          ]
+        }
+      }
+    },
+    "showDialogue": {
+      "$id": "/properties/showDialogue",
+      "type": "boolean",
+      "title": "The Showdialogue Schema ",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "pbK": {
+      "$id": "/properties/pbK",
+      "type": "string",
+      "title": "The Pbk Schema ",
+      "default": "",
+      "examples": [
+        "hrphtacsez13"
+      ]
+    },
+    "contentId": {
+      "$id": "/properties/contentId",
+      "type": "string",
+      "title": "The Contentid Schema ",
+      "default": "",
+      "examples": [
+        "ALTBALAJI_EPISODE_1058"
+      ]
+    },
+    "plg": {
+      "$id": "/properties/plg",
+      "type": "string",
+      "title": "The Plg Schema ",
+      "default": "",
+      "examples": [
+        "hi"
+      ]
+    }
+  }
+}

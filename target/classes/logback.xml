@@ -1,0 +1,45 @@
+<configuration>
+	<appender name="STDOUT"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<Pattern>
+				%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} -
+				%msg%n
+			</Pattern>
+		</encoder>
+	</appender>
+	<!-- <appender name="FILE" class="ch.qos.logback.core.FileAppender"> <file>./TestFile.log</file> 
+		<append>false</append> <immediateFlush>true</immediateFlush> <encoder> <Pattern> 
+		%d{yyyy-MM-dd HH:mm:ss} - %msg%n </Pattern> </encoder> </appender> -->
+
+	<timestamp key="bySecond" datePattern="yyyyMMddHHmmss" />
+	<appender name="SIFT"
+		class="ch.qos.logback.classic.sift.SiftingAppender">
+
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>DEBUG</level>
+		</filter>
+		<discriminator>
+			<Key>loggerFileName</Key>
+			<DefaultValue>LogFile</DefaultValue>
+		</discriminator>
+		<sift>
+			<appender name="FILE-${loggerFileName}"
+				class="ch.qos.logback.core.FileAppender">
+				<File>./result-files/log-files/${loggerFileName}_${bySecond}.log</File>
+				<Append>false</Append>
+				<encoder>
+					<Pattern>
+						%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %msg%n
+					</Pattern>
+				</encoder>
+			</appender>
+		</sift>
+	</appender>
+	<!-- Send logs to both console and file audit -->
+	<root level="DEBUG">
+		<appender-ref ref="SIFT" />
+		<appender-ref ref="STDOUT" />
+	</root>
+
+</configuration>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.airteltv.test.PlaybackAPI">
+        <methods>
+          <include name="playback_ALTBALAJI" invocation-numbers="2 3"/>
+          <include name="afterEachTestMethod"/>
+          <include name="startExtent"/>
+          <include name="generateReport"/>
+          <include name="extentSetup"/>
+        </methods>
+      </class> <!-- com.airteltv.test.PlaybackAPI -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
