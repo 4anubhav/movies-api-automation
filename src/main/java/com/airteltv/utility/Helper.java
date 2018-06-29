@@ -46,7 +46,7 @@ public class Helper {
 		return status;
 	}
 	
-	public static boolean assert_exists(JsonPath jp, String jsonpath, String message) {
+	public static boolean assert_NotNull(JsonPath jp, String jsonpath, String message) {
 		Boolean status = false;
 		
 		try {

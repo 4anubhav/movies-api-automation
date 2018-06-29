@@ -117,11 +117,11 @@ public class PlaybackAPI extends BaseTest {
 			s_assert.assertTrue(Helper.assert_Equals(jp.getString("playbackType"), "DRM", "playbackType"));
 			
 			if(os_type.equalsIgnoreCase("Android"))
-			s_assert.assertTrue(Helper.assert_exists(jp, "drminfo.licenceUrl", "licenceUrl"));
+			s_assert.assertTrue(Helper.assert_NotNull(jp, "drminfo.licenceUrl", "licenceUrl"));
 			
-			s_assert.assertTrue(Helper.assert_exists(jp, "drminfo.xssessionHeader", "xssessionHeader"));
-			s_assert.assertTrue(Helper.assert_exists(jp, "drminfo.streamId", "streamId"));
-			s_assert.assertTrue(Helper.assert_exists(jp, "drminfo.licenseValidity", "licenseValidity"));
+			s_assert.assertTrue(Helper.assert_NotNull(jp, "drminfo.xssessionHeader", "xssessionHeader"));
+			s_assert.assertTrue(Helper.assert_NotNull(jp, "drminfo.streamId", "streamId"));
+			s_assert.assertTrue(Helper.assert_NotNull(jp, "drminfo.licenseValidity", "licenseValidity"));
 		} else {
 			String m3u8Url = mm.getStringFromMongoDocument(dbo, "meta.m3u8Url");
 
@@ -130,7 +130,7 @@ public class PlaybackAPI extends BaseTest {
 			s_assert.assertTrue(
 					Helper.assert_Equals(jp.getBoolean("eligibleForPlayback"), Boolean.TRUE, "eligibleForPlayback"));
 			s_assert.assertTrue(Helper.assert_Equals(jp.getString("playbackType"), "URL", "playbackType"));
-			s_assert.assertTrue(Helper.assert_exists(jp, "bundleInfo", "bundleInfo"));			
+			s_assert.assertTrue(Helper.assert_NotNull(jp, "bundleInfo", "bundleInfo"));			
 		}
 		String _id = mm.getStringFromMongoDocument(dbo, "_id");
 		s_assert.assertTrue(Helper.assert_Equals(jp.getString("contentId"), _id, "contentId"));
@@ -170,8 +170,8 @@ public class PlaybackAPI extends BaseTest {
 		s_assert.assertTrue(
 				Helper.assert_Equals(jp.getBoolean("eligibleForPlayback"), Boolean.TRUE, "eligibleForPlayback"));
 		s_assert.assertTrue(Helper.assert_Equals(jp.getString("playbackType"), "URL", "playbackType"));
-		s_assert.assertTrue(Helper.assert_exists(jp, "playId", "playId"));
-		s_assert.assertTrue(Helper.assert_exists(jp, "bundleInfo", "bundleInfo"));
+		s_assert.assertTrue(Helper.assert_NotNull(jp, "playId", "playId"));
+		s_assert.assertTrue(Helper.assert_NotNull(jp, "bundleInfo", "bundleInfo"));
 		String _id = mm.getStringFromMongoDocument(dbo, "_id");
 		s_assert.assertTrue(Helper.assert_Equals(jp.getString("contentId"), _id, "contentId"));
 		s_assert.assertAll();
@@ -203,7 +203,7 @@ public class PlaybackAPI extends BaseTest {
 		s_assert.assertTrue(
 				Helper.assert_Equals(jp.getBoolean("eligibleForPlayback"), Boolean.TRUE, "eligibleForPlayback"));
 		s_assert.assertTrue(Helper.assert_Equals(jp.getString("playbackType"), "SDK", "playbackType"));
-		s_assert.assertTrue(Helper.assert_exists(jp, "bundleInfo", "bundleInfo"));
+		s_assert.assertTrue(Helper.assert_NotNull(jp, "bundleInfo", "bundleInfo"));
 		s_assert.assertAll();
 	}
 	
