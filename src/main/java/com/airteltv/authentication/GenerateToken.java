@@ -13,13 +13,13 @@ import org.apache.commons.lang3.StringUtils;
 import org.json.JSONObject;
 
 import com.airteltv.utility.EncryptUtils;
+import com.airteltv.utility.EnvProperties;
 import com.airteltv.utility.UserCoreUtils;
 
 public class GenerateToken {
 
 	public static String generateSignatureGET(String url1, String uid) {
-		final String secret = "blabla";
-		// "50de5a601c133a29c8db434fa9bf2db4";
+		final String secret = EnvProperties.getEnvProperty("config_", "MW_SECRET_KEY");
 		String token;
 		String signature = null;
 		try {
@@ -96,12 +96,13 @@ public class GenerateToken {
 		return uid + ":" + signature;
 	}
 	
-	public static String tokenForGetRequest() {
+	public static void main(String[] args) {
+	
 		String uid = getUID("7838710658");
 		String sign = null;
-		sign = generateSignatureGET("http://play-dev2.wynk.in/v2/user/content/playback?contentId=ALTBALAJI_EPISODE_1982", uid);
+		sign = generateSignatureGET("https://play.airtel.tv/v2/user/content/playback?contentId=ALTBALAJI_EPISODE_1055&appId=MOBILITY", uid);
 		
-		return getSignatureInFormat(uid, sign);
+		System.out.println(sign);
 	}
 	
 	

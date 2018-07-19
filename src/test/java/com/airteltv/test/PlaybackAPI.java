@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.Map;
 
 import org.apache.commons.io.output.WriterOutputStream;
+import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Factory;
@@ -58,12 +59,19 @@ public class PlaybackAPI extends BaseTest {
 		isDrmFlag = !((String.valueOf(contentList.get(counter)).split("\\.").length) == 1);
 		
 		if(isDrmFlag)
-			dbo = mm.findOneWithRegex("atv", "playable_content", "_id", String.valueOf(contentList.get(counter)).split("\\.")[0], "meta.isDrm", "true");
-		else if (contentList.get(counter).equals("ALTBALAJI_MOVIE"))
-			dbo = mm.findOneWithRegex("atv", "playable_content", "_id", String.valueOf(contentList.get(counter)).split("\\.")[0],  "meta.isDrm", "false");
-		else 
-			dbo = mm.findOneWithRegex("atv", "playable_content", "_id", String.valueOf(contentList.get(counter)).split("\\.")[0]);
-		contentID = mm.getStringFromMongoDocument_withoutLoggingInReports(dbo, "_id");
+			dbo = mm.findOneWithRegex("atv", "playable_content", "_id", String.valueOf(contentList.get(counter)).split("\\.")[0], "meta.isDrm", "true", "state", "PUBLISH");
+		else if(contentList.get(0).toString().contains("ALTBALAJI"))
+			dbo = mm.findOneWithRegex("atv", "playable_content", "_id", String.valueOf(contentList.get(counter)).split("\\.")[0], "meta.isDrm", "false", "state", "PUBLISH");
+		else
+			dbo = mm.findOneWithRegex("atv", "playable_content", "_id", String.valueOf(contentList.get(counter)).split("\\.")[0], "state", "PUBLISH");
+	
+		try{
+			contentID = mm.getStringFromMongoDocument_withoutLoggingInReports(dbo, "_id");
+		}
+		catch(IllegalArgumentException e) {
+			String stacktrace = ExceptionUtils.getStackTrace(e);
+			loggerWrapper.myLogger.error("Mongo object is null --> " + stacktrace);
+		}
 
 		String baseURI = EnvProperties.getEnvProperty("config_", "PLAY_BASE_URI");
 		String endPoint = EnvProperties.getEnvProperty("config_", "PLAY_API_ENDPOINT");
@@ -110,7 +118,7 @@ public class PlaybackAPI extends BaseTest {
 		
 		if (isDrmFlag) {
 			
-			String playId = mm.getStringFromMongoDocument(dbo, EnvProperties.getEnvProperty("config_", os_type + "_PLAYID_ALTBALAJI_DRM"));
+			String playId = mm.getStringFromMongoDocument(dbo, EnvProperties.getEnvProperty("config_", os_type + "_PLAYID_DRM"));
 
 			s_assert.assertTrue(Helper.assert_Equals(jp.getString("playId"), playId, "playID"));
 			s_assert.assertTrue(Helper.assert_Equals(jp.getString("isDrm"), "true", "isDrm"));

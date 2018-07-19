@@ -190,7 +190,7 @@ public class MongoManager {
 		String value;
 		try {
 			jsonString = JSON.serialize(dbo);
-			loggerWrapper.myLogger.info("key value is for " + jsonPath + " : " + jsonString);
+			loggerWrapper.myLogger.info("key value for " + jsonPath + " : " + jsonString);
 			Object document = Configuration.defaultConfiguration().jsonProvider().parse(jsonString);
 			value = JsonPath.read(document, jsonPath);
 			return value;
@@ -206,7 +206,7 @@ public class MongoManager {
 		String value;
 		try {
 			jsonString = JSON.serialize(dbo);
-			loggerWrapper.info("key value is for " + jsonPath + " : " + jsonString);
+			loggerWrapper.info("key value for " + jsonPath + " : " + jsonString);
 			Object document = Configuration.defaultConfiguration().jsonProvider().parse(jsonString);
 			value = JsonPath.read(document, jsonPath);
 			return value;
@@ -241,11 +241,11 @@ public class MongoManager {
 	
 	public static MongoManager connectBEMongo() {
 	    
-	    String host = EnvProperties.getEnvProperty("config_", "BE_MONGO_HOST");
-	    int port = Integer.parseInt(EnvProperties.getEnvProperty("config_", "BE_MONGO_PORT"));
-	    String auth_db = EnvProperties.getEnvProperty("config_", "BE_MONGO_AUTHENTICATION_DB");
-	    String uname = EnvProperties.getEnvProperty("config_", "BE_MONGO_USER");
-	    String pwd = EnvProperties.getEnvProperty("config_", "BE_MONGO_PASS");
+	    String host = EnvProperties.getEnvProperty("config_", "MW_MONGO_HOST");
+	    int port = Integer.parseInt(EnvProperties.getEnvProperty("config_", "MW_MONGO_PORT"));
+	    String auth_db = EnvProperties.getEnvProperty("config_", "MW_MONGO_AUTHENTICATION_DB");
+	    String uname = EnvProperties.getEnvProperty("config_", "MW_MONGO_USER");
+	    String pwd = EnvProperties.getEnvProperty("config_", "MW_MONGO_PASS");
 	    
 	    MongoManager mm = new MongoManager(host, port, auth_db, uname, pwd);
 		return mm;
